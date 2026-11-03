@@ -25,7 +25,7 @@
 <p>If you're signed in to iCloud, Kitaabi syncs your progress between your iPhone, iPad and Mac using your own private iCloud database. Apple stores this data for you. The developer can't see or access it. You can turn iCloud off for Kitaabi in your device's iCloud settings.</p>
 
 <h2>Kitaabi on the web</h2>
-<p>Kitaabi also has a website, <a href="https://kitaabi-web.vercel.app">kitaabi-web.vercel.app</a>. It works like the app, with these differences.</p>
+<p>Kitaabi also has a website, <a href="https://kitaabi.co">kitaabi.co</a>. It works like the app, with these differences.</p>
 <ul>
   <li><strong>Signing in.</strong> To use your iCloud progress, you sign in with your Apple Account through Apple's iCloud sign-in for websites (CloudKit JS). Apple handles the sign-in: Kitaabi never sees your Apple Account password, name or email address. Apple's sign-in script keeps you signed in with a cookie on the website; the website's server doesn't use it. Signed in, the website reads your progress from the same private iCloud database the app uses, which the developer can't see or access. For now it only reads it there; saving to iCloud from the website comes later. Apple's upload server doesn't accept files straight from websites, so when the website saves your progress, the file will pass through the website's server on Vercel on its way to Apple. The server sends it on unchanged and doesn't keep or log it.</li>
   <li><strong>Without signing in,</strong> your progress and settings are kept in your browser's storage on that computer only. Nothing is sent anywhere.</li>
